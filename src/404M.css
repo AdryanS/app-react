@@ -1,0 +1,30 @@
+.container{
+background-image: linear-gradient(113deg, red -1%, yellow 101%);
+
+
+}
+
+
+.mensagem1{
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    font-size: 250px;
+    color: rgba(0, 0,0, 0);
+
+    background: linear-gradient(113deg, red -1%, yellow 101%);
+
+
+}
+.mensagem2{
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    font-size: 190px;
+    color: rgba(0, 0,0, 0);
+
+    background: linear-gradient(113deg, red -1%, yellow 101%);
+
+
+
+}
