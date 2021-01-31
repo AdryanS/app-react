@@ -19,6 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "routes-js": "^0.1.8",
+    "shaka-player-react": "^1.1.2",
     "styled-components": "^5.2.1",
     "swiper": "^6.4.8",
     "web-vitals": "^0.2.4",

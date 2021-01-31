@@ -16,6 +16,8 @@ const Bodyy = styled.body`
     margin: auto;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }
 .dive{
     display: flex;

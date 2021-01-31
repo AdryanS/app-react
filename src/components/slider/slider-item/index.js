@@ -5,7 +5,7 @@ require("./style.css");
 const SliderItem = ({ movie, width }) => {
   return (
     <div className="slider-item" style={{ width: `${width}%` }}>
-      <Link  to={`/filme/${movie.stream_id}`}>
+      <Link  to={`/filme/info/${movie.stream_id}`}>
       <img
         className="slider-image"
         src={`${movie.stream_icon}`}

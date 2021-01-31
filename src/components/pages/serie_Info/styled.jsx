@@ -143,10 +143,10 @@ export const Container = styled.body `
   }
   .cu{
     position: absolute;
-    width: 300px;
-    height: 70px;
-    left: 1297px;
-    top: 800px;
+width: 300px;
+height: 70px;
+left: 1297px;
+top: 800px;
     background: linear-gradient(115deg ,rgba(0,0,0,0.2), transparent);
     backdrop-filter: blur(15px);
     border-radius: 0.417vmax;

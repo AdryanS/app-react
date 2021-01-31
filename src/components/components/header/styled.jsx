@@ -18,6 +18,7 @@ const Container = styled.div`
     input[type="text"] {
         color: #fff;
         font-size: 15px;
+        border-radius:0.417vmax;
     }
     
     input[type="text"]::placeholder {

@@ -1,28 +1,35 @@
 import React, {Component} from 'react';
 //import api from './api';
-import Slider from '../../slider/slider'
 import background from '../../../components/img/background.jpg';
 import {Link} from 'wouter'
 import Bodyy from './style'
 
 import Header from '../../components/header/index'
 
-class Filmes extends Component {
+class Series extends Component {
 
   state = {
-    filmes: [],
+    series: [],
     categorias: []
   }
 
   async componentDidMount() {
     //pegando os filme menózada
-    const getFilmes = async() => {
-      await fetch("/api/filmes").then((response) => response.json()).then(response => this.setState({filmes: response}));
-      console.log(this.state.filmes)
+    const getFilmes = async () => {
+      const response = await fetch("/api/series")
+      const data = await response.json()
+
+      
+      
+      await this.setState({series: data})
+      console.log(this.state.series)
     }
     //pegando as series menózada
     const getCategorias = async() => {
-      await fetch("/api/filmes/categorias").then((response) => response.json()).then(response => this.setState({categorias: response}));
+      const response = await fetch("/api/series/categorias");
+      const data = await response.json()
+      
+      await this.setState({categorias: data})
       console.log(this.state.categorias)
     }
     //rodando as função jão
@@ -38,7 +45,7 @@ class Filmes extends Component {
     const filtrado = (num) => {
       return this
         .state
-        .filmes
+        .series
         .filter(a => a.category_id === num.toString())
     }
 
@@ -56,7 +63,7 @@ class Filmes extends Component {
                   <Link className="ze" to={`/filmes/${categoria.category_id}`}>
                     <h2>{categoria.category_name}
                       - {filtrado(categoria.category_id).length}
-                      Filmes</h2>
+                      series</h2>
                   </Link>
                   <Slider movies={filtrado(categoria.category_id)}/>
                 </div>
@@ -69,4 +76,4 @@ class Filmes extends Component {
   }
 }
 
-export default Filmes;
+export default Series;

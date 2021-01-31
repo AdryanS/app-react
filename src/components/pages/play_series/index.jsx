@@ -33,7 +33,7 @@ class index extends Component {
 
     return (<Bodyy>
       <div className="player">
-      <ShakaPlayer src={`http://appcliente.com:8880/movie/fullip/adgptw/${this.props.params.filme}.${this.state.movie_data.container_extension}`}></ShakaPlayer>
+      <ShakaPlayer src={`http://appcliente.com:8880/movie/fullip/adgptw/${this.props.params.filme}.${this.state.movie_data.container_extension}`} autoplay onplay="" />
       </div>
     </Bodyy>);
   }
