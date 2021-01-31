@@ -54,10 +54,9 @@ class Filmes extends Component {
               .map(categoria => (
                 <div>
                   <Link className="ze" to={`/filmes/${categoria.category_id}`}>
-                    <h2>{categoria.category_name}
-                      - {filtrado(categoria.category_id).length}
-                      Filmes</h2>
+                    <h2>{categoria.category_name}</h2>
                   </Link>
+                    <h3>{filtrado(categoria.category_id).length} Filmes</h3>
                   <Slider movies={filtrado(categoria.category_id)}/>
                 </div>
               ))}

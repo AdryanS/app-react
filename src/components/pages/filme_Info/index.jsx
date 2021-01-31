@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {link} from 'wouter';
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 import Background from '../../img/background.jpg'
 
@@ -24,7 +25,7 @@ class filme_info extends Component {
       this.setState({info: data.info})
       this.setState({movie_data: data.movie_data})
 
-      console.log(this.state.info)
+      console.log(this.props.params.id)
     }
     pegarInfo()
   }

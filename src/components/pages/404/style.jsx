@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 const Bodyy = styled.body`
   margin: 0;
-
-  .body {
-    background-color: rgb(43, 43, 43);
-    margin: 0px;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #000;
   /* imagem */
   .backg {
     position: fixed;
@@ -15,25 +13,29 @@ const Bodyy = styled.body`
     height: 100%;
   }
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
     background: linear-gradient(
       to left top,
       rgba(122, 122, 122, 0.23) 0%,
       rgba(100, 100, 100, 0.7) 100%
     );
-    width: 890px;
-    height: 516px;
+    max-width: 900px;
+    max-height: 500px;
     border-style: solid;
     border-width: 1.5px;
     border-color: orangered;
     border-radius: 20px;
     position: fixed;
-    top: 232px;
-    bottom: 0;
+    top: 0px;
+    bottom: 0px;
     left: 0;
     right: 0;
     margin: auto;
-    margin: 0 auto;
     background-clip: border-box, content-box;
+    -webkit-background-clip: text;
   }
   .pao {
     width: 632px;
@@ -41,45 +43,31 @@ const Bodyy = styled.body`
     background-color: red;
   }
   h3 {
-    padding-top: 35px;
+    margin-top: -50px;
     font-family: "Red Hat Text", sans-serif;
-    font-size: 135px;
+    font-size: 150px;
     font-weight: 600;
     font-style: medium;
-    line-height: 179px;
-    text-align: center;
+    line-height: 180px;
     background: linear-gradient(113deg, #ff1212 0%, #ff8743 99%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all ease 0.5;
   }
-  :hover {
-    background-position: 100% 0;
-    transition: all ease 0.5;
-  }
-
   h4 {
-    width: 322px;
-    height: 94px;
-
+    width: 350px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 400;
-
+    font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
-
-    color: #bfbfbf;
+    line-height: 50px;
+    color: #d5d4d4;
   }
   p {
-    width: 325px;
-    height: 23px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 400px;
+    height: 50px;
     margin-top: 50px;
     text-align: center;
     background: linear-gradient(
@@ -91,6 +79,7 @@ const Bodyy = styled.body`
     );
     background-size: 200%;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Roboto;
     font-style: normal;
@@ -106,14 +95,25 @@ const Bodyy = styled.body`
     background-position: 100% 0;
     transition: all 0.4s ease-in-out;
   }
-  .voltar {
-  }
-
-  .mensagem {
-  }
-
   .num {
     padding: auto;
+  }
+  @media only screen and (max-width: 900px) {
+    h3 {
+      margin-top: 10px;
+      font-size: 15vmax;
+      line-height: 16vmax;
+    }
+    h4 {
+      margin: 2vmax;
+      width: 70%;
+      font-size: 4vmax;
+      line-height: 35px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 2.5vmax;
+    }
   }
 `;
 

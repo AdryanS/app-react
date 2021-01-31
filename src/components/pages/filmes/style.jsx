@@ -11,7 +11,6 @@ const Bodyy = styled.body`
 }
 
 .ze{
-    /*text-decoration: none; */
     overflow :initial;
     cursor: pointer;
 }
@@ -28,7 +27,16 @@ h1 {
 }
 h2 {
     position: relative;
+    font-style: roboto;
     font-size: 2vmax;
+    color: #fff;
+    margin-left: 4vmax;
+    margin-bottom: 1vmax;
+}
+h3{
+    position: relative;
+    font-style: roboto;
+    font-size: 1.2vmax;
     color: #cecece;
     margin-left: 4vmax;
     margin-bottom: 2vmax;
